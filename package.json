@@ -1,0 +1,35 @@
+{
+  "name": "convert-json-string",
+  "version": "1.0.0",
+  "description": "Convert string to json or json to string.",
+  "main": "index.js",
+  "scripts": {
+    "mocha": "_mocha --",
+    "coverage": "istanbul cover --print both node_modules/mocha/bin/_mocha --",
+    "test": "npm run coverage",
+    "posttest": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandoNardi/convert-json-string.git"
+  },
+  "keywords": [
+    "json",
+    "string",
+    "convert",
+    "serializer",
+    "parse",
+    "object"
+  ],
+  "author": "Nardi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernandoNardi/convert-json-string/issues"
+  },
+  "homepage": "https://github.com/FernandoNardi/convert-json-string#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.3"
+  }
+}
