@@ -16,5 +16,4 @@ node_modules/
 
 # Yarn Integrity file
 .yarn-integrity
-.yarn-lock
-
+yarn.lock
