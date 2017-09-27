@@ -7,7 +7,9 @@
     "mocha": "_mocha --",
     "coverage": "istanbul cover --print both node_modules/mocha/bin/_mocha --",
     "test": "npm run coverage",
-    "posttest": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100"
+    "posttest": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,8 @@
   "dependencies": {
     "chai": "^4.1.2",
     "istanbul": "^0.4.5",
-    "mocha": "^3.5.3"
-  }
+    "mocha": "^3.5.3",
+    "snyk": "^1.41.1"
+  },
+  "snyk": true
 }
